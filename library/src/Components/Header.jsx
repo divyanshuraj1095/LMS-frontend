@@ -1,6 +1,6 @@
 import soeicon from '../assets/soe icon.jpeg';
 import { useEffect, useState } from 'react';
-import searchIcon from '../assets/search.svg';
+
 import usericon from '../assets/usericon.svg';
 import Button from '../Components/Button.jsx';
 
@@ -26,20 +26,11 @@ const Header = ({ setAbout,setMyBooks}) => {
                      <Button label="About" onClick={() => {
                          setAbout(true); 
                          setMyBooks(false); }} />
+                     <Button label=""/>
                     </nav>
                 </nav>
 
-                <div className='search'>
-                    <div className='searchbox'>
-                        <img src={searchIcon} alt='search-icon' />
-                    </div>
-                    <input 
-                        type='text' 
-                        className='searchinput' 
-                        placeholder='Search Books' 
-                        
-                    />
-                </div>
+                
 
                 <button className='userbutton'><img className='usericon' src={usericon} alt="icon" /></button>
             </header>

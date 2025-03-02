@@ -8,13 +8,13 @@ import book7 from '../assets/book7.jpg'
 import book8 from '../assets/book8.jpeg'
 import BorrowButton from '../Components/BorrowButton'
 import cusat from '../assets/cusat.webp'
-
+import SearchCatalog from '../Components/SearchCatalog'
 
 const Section = ()=>{
-    return(<div>
-     
+    return(<div> 
     <section className="section"/>
     <img src={cusat} alt='cusat' className='cusat'></img>
+    <SearchCatalog/>
     <h1>Newly Stocked </h1>
     <div className="section2">
         <div className='book1'>

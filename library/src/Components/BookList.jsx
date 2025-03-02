@@ -1,5 +1,6 @@
 import BorrowButton from '../Components/BorrowButton.jsx'
 const BookList = ()=>{
+  
     const books = [
         {
           id: 1,
@@ -126,7 +127,7 @@ return (
     <div className='booklist'>
      {books.map((book) => (
       <div key={book.id } >
-        <img src={books.image}alt={books.title} className='book1'/>
+        <img src={book.image}alt={book.title} className='book1'/>
         <h4>{book.title}</h4>
         <p>{book.author}</p>
        
