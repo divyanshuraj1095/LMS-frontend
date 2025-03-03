@@ -17,12 +17,10 @@ const ResponsiveMenu = ({ open, setOpen, setAbout, setMyBooks }) => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="fixed top-0 left-0 w-72 h-screen bg-white shadow-lg border-r z-50 p-4"
                 >
-                    {/* Close Button */}
+                
                     <button className="absolute top-4 right-4 text-xl" onClick={() => setOpen(false)}>
                         <AiOutlineClose />
                     </button>
-
-                    {/* Sidebar Menu */}
                     <ul className="space-y-4 text-lg">
                         <li 
                             className="hover:text-primary cursor-pointer"
@@ -68,7 +66,7 @@ const ResponsiveMenu = ({ open, setOpen, setAbout, setMyBooks }) => {
 
                         {/* <li className="hover:text-primary cursor-pointer">Remote Access</li> */}
 
-                        {/* Other Info Section */}
+                        
                         <li>
                             <div 
                                 className="flex justify-between items-center cursor-pointer"

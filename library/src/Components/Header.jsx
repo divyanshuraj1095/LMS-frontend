@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from './ResponsiveMenu.jsx';
 import soeicon from '../assets/soe icon.jpeg';
-import usericon from '../assets/usericon.svg'; // Default user icon
-// import profileIcon from '../assets/profileIcon.png'; // Example: Profile image when logged in
+import usericon from '../assets/usericon.svg'; 
 import Button from '../Components/Button.jsx';
 
 const Header = ({ setAbout, setMyBooks }) => {
@@ -22,7 +21,7 @@ const Header = ({ setAbout, setMyBooks }) => {
                         <h2>SOE Library</h2>
                     </div>
                     
-                    {/* Sidebar Toggle Button */}
+                    
                     <MdMenu className='vegburger text-4xl cursor-pointer' onClick={() => setOpen(!open)} />
 
                     <nav className='button'>
@@ -48,7 +47,7 @@ const Header = ({ setAbout, setMyBooks }) => {
                     <option value='contact'>Contact</option>
                 </select>
 
-                {/* User Profile Icon - Click to Show Dropdown */}
+                
                 <div className="relative">
                     <button className='userbutton' onClick={() => setDropdownOpen(!dropdownOpen)}>
                         <img 
@@ -58,7 +57,7 @@ const Header = ({ setAbout, setMyBooks }) => {
                         />
                     </button>
 
-                    {/* Dropdown Menu */}
+                    
                     {dropdownOpen && (
                         <div className="absolute top-14 right-0 bg-white shadow-lg rounded-lg w-48 p-4">
                             {isLoggedIn ? (
@@ -84,7 +83,7 @@ const Header = ({ setAbout, setMyBooks }) => {
                 </div>
             </header>
 
-            {/* Sidebar Component with Props */}
+        
             <ResponsiveMenu open={open} setOpen={setOpen} setAbout={setAbout} setMyBooks={setMyBooks} />
         </>
     );
