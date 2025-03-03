@@ -32,16 +32,34 @@ return(<>
                
             </div>
              
-
-             {/* <div className='searchbox'>
-                 <img src={searchIcon} alt='search-icon' />
-             </div> */}
-            <input 
+            <div >
+            
+            {/* <input 
              type='text' 
              className='searchinput' 
              placeholder='Search Books'/>
-                </div>
+                 <div className='searchbox'>
+                  <button className='button'>
+                 <img src={searchIcon} alt='search-icon' />
+                 </button>
+                 </div>
+             </div> */}
+             <div className="search-container">
+    <input 
+        type="text" 
+        className="search-input" 
+        placeholder="Search Books"
+        />
+       <button className="search-button">
+        <img src={searchIcon} alt="Search Icon" />
+    </button>
+    </div>
 
+
+
+                </div>
+                </div>
+               
 </>)
 }
 export default SearchCatalog

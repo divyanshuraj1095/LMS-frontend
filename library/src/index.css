@@ -63,7 +63,8 @@
 .searchbox{
     width: fit-content;
     height: 50px;
-    background-color: green;
+    /* background-color: green; */
+    background-color: #2c2c2c;
     border-radius: 18px;
     display: flex;
     align-items: center;
@@ -242,4 +243,42 @@
     /* height: 100px; */
    width: fit-content;
    cursor: pointer;
+}
+/* Flexbox for input and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Adjust as needed */
+}
+
+/* Input Box Styling */
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Search Button Styling */
+.search-button {
+    background: #2c2c2c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Button Hover Effect */
+.search-button:hover {
+    background: #0056b3;
 }
