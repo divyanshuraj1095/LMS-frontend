@@ -1,4 +1,4 @@
-/* @import "tailwindcss"; */
+
 .header
 {
     /* width: 100%; */
@@ -197,8 +197,11 @@
     display: flex;
     width: fit-content;
     /* height: 10px; */
-    height: 30px;
-    background-color: #1e1f20;
+    height: 60px;
+    /* background-color: #1e1f20; */
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border: none;
 }
 .dropdown{
     width: 300px;
@@ -232,4 +235,11 @@
     height: 50px;
     width: 25px;
     padding-left: 50px;
+}
+.userbutton{
+    
+    /* background-color: #d9008d; */
+    /* height: 100px; */
+   width: fit-content;
+   cursor: pointer;
 }
